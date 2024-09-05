@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<!-- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
@@ -10,24 +10,25 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1ae5ab;
+            background-color: #0e0d0d;
+            color: white
         }
 
         header {
-            background-color: #4e1580;
-            color: #3f1ff7;
+            background-color: #0b0b0b;
+            color: #eeedf2;
             padding: 10px 0;
             text-align: center;
         }
 
         nav {
             text-align: center;
-            background-color: #eb0909;
+            background-color: #0d0d0d;
             padding: 10px 0;
         }
 
         nav a {
-            color: rgb(202, 90, 20);
+            color: white;
             margin: 0 20px;
             text-decoration: none;
             font-weight: bold;
@@ -41,8 +42,8 @@
             width: 90%;
             margin: 20px auto;
             padding: 20px;
-            background-color: #20ea20;
-            box-shadow: 0 0 10px rgba(19, 19, 19, 0.1);
+            background-color: #0e0d0d;
+            box-shadow: 0 0 10px rgba(245, 242, 242, 0.1);
         }
 
         section {
@@ -50,7 +51,7 @@
         }
 
         h1, h2 {
-            color: #5e0de1;
+            color: white;
         }
 
         p {
@@ -60,39 +61,47 @@
         footer {
             text-align: center;
             padding: 10px 0;
-            background-color: #1b53cd;
-            color: #060606;
+            background-color: black;
+            color: white;
             position: fixed;
             width: 100%;
             bottom: 0;
         }
     </style>
+</head> -->
+<head>
+    <script>
+        fetch('head.html')
+        .then(response => response.text())
+        .then(data => document.head.innerHTML = data);
+    </script>
 </head>
 
 <body>
 
     <header>
-        <h1>Welcome to My Personal Website</h1>
+        <h1>Teddy Meissner</h1>
     </header>
 
     <nav>
-        <a href="#about">About Me</a>
+        <a href="about.html">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <div class="container">
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Teddy Meissner, a PhD Student at the University of Arizona. 
-                I have a deep interest in optimization, PDEs and machine learning. This website showcases my academic work, projects, and other professional activities.
-            . </p>
-            . </p>
-            . </p>
-            . </p>
+        <section id="about" style="text-align: center;">
+            <h2>title</h2>
+            <img src="images/me.png" alt="Teddy Meissner" width="200">
+            <img src="images/me.png" alt="Teddy Meissner" width="200">
+            <img src="images/me.png" alt="Teddy Meissner" width="200">
 
-            </section>
+            <p>Hello! I'm Teddy Meissner, a PhD Student at the University of Arizona. 
+               I have a deep interest in optimization, PDEs, and machine learning. 
+               This website showcases my academic work, projects, and other professional activities.</p>
+        </section>
+        
 
         <section id="Under Construction">
             <h2>Under Construction</h2>
